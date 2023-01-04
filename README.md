@@ -1,4 +1,4 @@
-# Wheels for Pymol-open-source for Windows
+# Pymol-open-source Wheels for Windows
 
 This repository provides unofficial binary wheels for [Pymol-open-source](https://github.com/schrodinger/pymol-open-source) for Python for Windows.
 
