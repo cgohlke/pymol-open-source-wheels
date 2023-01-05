@@ -1,8 +1,8 @@
-# Pymol-open-source Wheels for Windows
+# Pymol-open-source wheels for Python on Windows 
 
-This repository provides unofficial binary wheels for [Pymol-open-source](https://github.com/schrodinger/pymol-open-source) for Python for Windows.
+This repository provides unofficial binary wheels for [Pymol-open-source](https://github.com/schrodinger/pymol-open-source) for Python on Windows.
 
-[PyMOL(tm)](https://pymol.org) is a molecular visualization product for rendering and animating 3D molecular structures. PyMOL is a trademark of Schrodinger, LLC.
+[PyMOL(tm)](https://pymol.org) is a visualization software for rendering and animating 3D molecular structures. PyMOL is a trademark of Schrodinger, LLC.
 
 The files are unofficial (meaning: informal, unrecognized, personal, unsupported, no warranty, no liability, provided "as is") and made available for testing and evaluation purposes.
 
