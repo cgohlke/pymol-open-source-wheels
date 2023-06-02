@@ -1,4 +1,4 @@
-# Pymol-open-source wheels for Python on Windows 
+# Pymol-open-source wheels for Python on Windows
 
 This repository provides unofficial binary wheels for [Pymol-open-source](https://github.com/schrodinger/pymol-open-source) for Python on Windows.
 
@@ -24,22 +24,22 @@ The [Microsoft Visual C++ Redistributable packages for Visual Studio 2022](https
 
 The ``pymol-open-source`` package conflicts with the [``chempy``](https://pypi.org/project/chempy/) package. Only one library can be imported in a process.
 
-## Release 2023.1.4
+## Release 2023.6.1
 
-This release has been built from the following source code:
+This release was built from the following source code:
 
-- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 2.6.0a0 [f70c533](https://github.com/schrodinger/pymol-open-source/commit/f70c533d015b1017a6aa77a05c644b70725c4e23)
+- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 2.6.0a0 [master](https://github.com/schrodinger/pymol-open-source/commit/17be7d0f287d9ba2d659c009e40e945dd3f86163)
 - [boost](https://www.boost.org/users/download/) 1.81.0
 - [brotli](https://github.com/google/brotli) 1.0.9
 - [bzip2](https://sourceware.org/pub/bzip2/) 1.0.8
 - [freeglut](https://github.com/FreeGLUTProject/freeglut) 3.4.0
-- [freetype](https://download.savannah.gnu.org/releases/freetype/) 2.12.1
+- [freetype](https://download.savannah.gnu.org/releases/freetype/) 2.13.0
 - [glew](https://github.com/nigels-com/glew) 2.2.0
 - [glm](https://github.com/g-truc/glm) 0.9.9.8
-- [harfbuzz](https://github.com/harfbuzz/harfbuzz) 5.3.1
+- [harfbuzz](https://github.com/harfbuzz/harfbuzz) 7.3.0
 - [libpng](https://github.com/glennrp/libpng) 1.6.39
-- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.10.3
-- [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.37
+- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.11.4
+- [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.38
 - [mmtf-cpp](https://github.com/rcsb/mmtf-cpp) 1.1.0
 - [msgpack-cxx](https://github.com/msgpack/msgpack-c/tree/cpp_master) 4.1.3
 - [VTK-m](https://gitlab.kitware.com/vtk/vtk-m) 1.9.0
@@ -49,8 +49,8 @@ This release has been built from the following source code:
 ## Build system
 
 - [Windows Dev Kit](https://learn.microsoft.com/en-us/windows/arm/dev-kit/) 2023
-- [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 2022 Community 17.4
-- [CPython](https://www.python.org/downloads/windows/) 3.8, 3.9, 3.10, 3.11
+- [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 2022 Community 17.6
+- [CPython](https://www.python.org/downloads/windows/) 3.9, 3.10, 3.11
 - [PyPy](https://www.pypy.org/download.html) 3.9
 
 ## Alternatives
