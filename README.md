@@ -12,10 +12,10 @@ Source code changes, if any, have been submitted to the project maintainers or a
 
 The wheels can be downloaded from the [Releases](https://github.com/cgohlke/pymol-open-source.whl/releases) page.
 
-Install a wheel on the command line (e.g., for Python 3.11 64-bit):
+Install a wheel on the command line, for example for Python 3.11 64-bit:
 
     $ py.exe -3.11 -m pip install pymol-2.6.0a0-cp311-cp311-win_amd64.whl
-    
+
 Start the Pymol app using the ``pymol.exe`` executable in Python's script folder or from the command line:
 
     $ py.exe -3.11 -m pymol
@@ -24,22 +24,22 @@ The [Microsoft Visual C++ Redistributable packages for Visual Studio 2022](https
 
 The ``pymol-open-source`` package conflicts with the [``chempy``](https://pypi.org/project/chempy/) package. Only one library can be imported in a process.
 
-## Release 2023.9.26
+## Release 2024.1.1
 
 This release was built from the following source code:
 
-- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 2.6.0a0 [master](https://github.com/schrodinger/pymol-open-source/commit/d59041b68ce95fc9f72c54a3cce72437fe679b3e)
-- [boost](https://www.boost.org/users/download/) 1.82.0
+- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 2.6.0a0 [master](https://github.com/schrodinger/pymol-open-source/commit/c3e298356a13f93fce939f860800625272754c97)
+- [boost](https://www.boost.org/users/download/) 1.84.0
 - [brotli](https://github.com/google/brotli) 1.1.0
 - [bzip2](https://sourceware.org/pub/bzip2/) 1.0.8
 - [freeglut](https://github.com/FreeGLUTProject/freeglut) 3.4.0
 - [freetype](https://download.savannah.gnu.org/releases/freetype/) 2.13.2
 - [glew](https://github.com/nigels-com/glew) 2.2.0
 - [glm](https://github.com/g-truc/glm) 0.9.9.8
-- [harfbuzz](https://github.com/harfbuzz/harfbuzz) 8.1.1
+- [harfbuzz](https://github.com/harfbuzz/harfbuzz) 8.3.0
 - [libpng](https://github.com/glennrp/libpng) 1.6.40
-- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.11.5
-- [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.38
+- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.12.3
+- [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.39
 - [mmtf-cpp](https://github.com/rcsb/mmtf-cpp) 1.1.0
 - [msgpack-cxx](https://github.com/msgpack/msgpack-c/tree/cpp_master) 6.1.0
 - [VTK-m](https://gitlab.kitware.com/vtk/vtk-m) 1.9.0
@@ -49,8 +49,8 @@ This release was built from the following source code:
 ## Build system
 
 - [Windows Dev Kit](https://learn.microsoft.com/en-us/windows/arm/dev-kit/) 2023
-- [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 2022 Community 17.7
-- [CPython](https://www.python.org/downloads/windows/) 3.9, 3.10, 3.11, 3.12rc
+- [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 2022 Community 17.8
+- [CPython](https://www.python.org/downloads/windows/) 3.9, 3.10, 3.11, 3.12
 - [PyPy](https://www.pypy.org/download.html) 3.10
 
 ## Alternatives
