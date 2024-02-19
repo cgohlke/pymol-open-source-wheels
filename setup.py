@@ -1,7 +1,8 @@
 # setup.py for pymol-launcher
 
-import sys
 import subprocess
+import sys
+
 from setuptools import setup
 from setuptools._distutils import ccompiler
 
@@ -11,45 +12,50 @@ with open('pymol.cpp', 'w') as fh:
 #define WIN32_LEAN_AND_MEAN
 #include <Python.h>
 #include <windows.h>
-#include <malloc.h>
 
-int PyMOL_Main(int argc, char **argv)
+int
+PyMOL_Main(int argc, wchar_t **argv)
 {
-    char* code = 
-"import sys, os\n"
-"sys.frozen = 1\n"
-"import numpy\n"
-"import __main__\n"
-"__main__.pymol_launch = 2\n"
-"__main__.pymol_argv = sys.argv\n"
-"import pymol\n"
-"pymol.finish_launching()\n";
+    PyStatus status;
+    PyConfig config;
 
-    wchar_t **program_args = (wchar_t **)PyMem_Malloc(sizeof(wchar_t *) * (argc + 1)); 
-    if (!program_args) { 
-        Py_FatalError("out of memory"); 
-    } 
-    for (int i = 0; i < argc; i++) { 
-        program_args[i] = (wchar_t *)PyMem_Malloc(sizeof(wchar_t) * (strlen(argv[i]) + 1)); 
-        if (!program_args[i]) { 
-            Py_FatalError("out of memory"); 
-        } 
-        program_args[i] = Py_DecodeLocale(argv[i], NULL);        
+    PyConfig_InitPythonConfig(&config);
+    status = PyConfig_SetArgv(&config, argc, argv);
+    if (PyStatus_Exception(status)) {
+        goto fail;
     }
-    program_args[argc] = NULL;
+    config.parse_argv = 0;
+    status = PyConfig_SetString(&config, &config.run_module, L"pymol");
+    if (PyStatus_Exception(status)) {
+        goto fail;
+    }
+    status = Py_InitializeFromConfig(&config);
+    if (PyStatus_Exception(status)) {
+        goto fail;
+    }
+    PyConfig_Clear(&config);
+    return Py_RunMain();
 
-    Py_SetProgramName(program_args[0]); 
-    Py_Initialize();
-    PySys_SetArgv(argc, program_args); 
-    PyRun_SimpleString(code);
-    Py_Finalize();
+fail:
+    PyConfig_Clear(&config);
+    if (PyStatus_IsExit(status)) {
+        return status.exitcode;
+    }
+    assert(PyStatus_Exception(status));
+    Py_ExitStatusException(status);
     return 0;
 }
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+int WINAPI wWinMain(
+    HINSTANCE hInstance,
+    HINSTANCE hPrevInstance,
+    LPWSTR lpCmdLine,
+    int nCmdShow
+)
 {
-    return PyMOL_Main(__argc, __argv);
-}"""
+    return PyMOL_Main(__argc, __wargv);
+}
+"""
     )
 
 with open('pymol.rc', 'w') as fh:
