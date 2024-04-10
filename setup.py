@@ -77,7 +77,7 @@ compiler.link_executable(
 
 setup(
     name="pymol-launcher",
-    version="2.6",
+    version="3.0",
     # install_requires=['pymol'],
     packages=[],
     libraries=[('', {'sources': []})],
