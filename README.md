@@ -14,22 +14,22 @@ The wheels can be downloaded from the [Releases](https://github.com/cgohlke/pymo
 
 Install a wheel on the command line, for example for Python 3.12 64-bit:
 
-    $ py.exe -3.12 -m pip install pymol-3.0.0-cp312-cp312-win_amd64.whl
+    py.exe -3.12 -m pip install pymol-3.1.0a0-cp312-cp312-win_amd64.whl
 
 Start the Pymol app using the ``pymol.exe`` executable in Python's script folder or from the command line:
 
-    $ py.exe -3.12 -m pymol
+    py.exe -3.12 -m pymol
 
 The [Microsoft Visual C++ Redistributable packages for Visual Studio 2022](https://learn.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) is required to run the software.
 
 The ``pymol-open-source`` package conflicts with the [``chempy``](https://pypi.org/project/chempy/) package. Only one library can be imported in a process.
 
-## Release 2024.4.9
+## Release 2024.5.18
 
 This release was built from the following source code:
 
-- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 3.0.0
-- [boost](https://www.boost.org/users/download/) 1.84.0
+- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 3.1.0a0 [master](https://github.com/schrodinger/pymol-open-source/commit/3943835a93c039cb657ce4a63434e99a40358466)
+- [boost](https://www.boost.org/users/download/) 1.85.0
 - [brotli](https://github.com/google/brotli) 1.1.0
 - [bzip2](https://sourceware.org/pub/bzip2/) 1.0.8
 - [freeglut](https://github.com/FreeGLUTProject/freeglut) 3.4.0
@@ -38,7 +38,7 @@ This release was built from the following source code:
 - [glm](https://github.com/g-truc/glm) 1.0.1
 - [harfbuzz](https://github.com/harfbuzz/harfbuzz) 8.3.1
 - [libpng](https://github.com/glennrp/libpng) 1.6.43
-- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.12.6
+- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.12.7
 - [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.39
 - [mmtf-cpp](https://github.com/rcsb/mmtf-cpp) 1.1.0
 - [msgpack-cxx](https://github.com/msgpack/msgpack-c/tree/cpp_master) 6.1.0
