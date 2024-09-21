@@ -26,6 +26,11 @@ share/python-wheels/
 .installed.cfg
 *.egg
 *.whl
+*.exe
+*.rc
+*.res
+*.obj
+*.cpp
 MANIFEST
 
 # PyInstaller

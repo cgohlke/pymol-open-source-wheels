@@ -28,18 +28,18 @@ The ``pymol-open-source`` package conflicts with the [``chempy``](https://pypi.o
 
 This release was built from the following source code:
 
-- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 3.1.0a0 [master](https://github.com/schrodinger/pymol-open-source/commit/3943835a93c039cb657ce4a63434e99a40358466)
+- [Pymol-open-source](https://github.com/schrodinger/pymol-open-source/) 3.1.0a0 [master](https://github.com/schrodinger/pymol-open-source/commit/9d3061ca58d8b69d7dad74a68fc13fe81af0ff8e)
 - [boost](https://www.boost.org/users/download/) 1.85.0
 - [brotli](https://github.com/google/brotli) 1.1.0
 - [bzip2](https://sourceware.org/pub/bzip2/) 1.0.8
-- [freeglut](https://github.com/FreeGLUTProject/freeglut) 3.4.0
-- [freetype](https://download.savannah.gnu.org/releases/freetype/) 2.13.2
+- [freeglut](https://github.com/FreeGLUTProject/freeglut) 3.6.0
+- [freetype](https://download.savannah.gnu.org/releases/freetype/) 2.13.3
 - [glew](https://github.com/nigels-com/glew) 2.2.0
 - [glm](https://github.com/g-truc/glm) 1.0.1
-- [harfbuzz](https://github.com/harfbuzz/harfbuzz) 8.3.1
-- [libpng](https://github.com/glennrp/libpng) 1.6.43
-- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.12.7
-- [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.39
+- [harfbuzz](https://github.com/harfbuzz/harfbuzz) 8.5.0
+- [libpng](https://github.com/glennrp/libpng) 1.6.44
+- [libxml2](https://gitlab.gnome.org/GNOME/libxml2) 2.12.9
+- [libxslt](https://gitlab.gnome.org/GNOME/libxslt) 1.1.42
 - [mmtf-cpp](https://github.com/rcsb/mmtf-cpp) 1.1.0
 - [msgpack-cxx](https://github.com/msgpack/msgpack-c/tree/cpp_master) 6.1.0
 - [VTK-m](https://gitlab.kitware.com/vtk/vtk-m) 1.9.0
@@ -49,8 +49,8 @@ This release was built from the following source code:
 ## Build system
 
 - [Windows Dev Kit](https://learn.microsoft.com/en-us/windows/arm/dev-kit/) 2023
-- [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 2022 Community 17.9
-- [CPython](https://www.python.org/downloads/windows/) 3.9, 3.10, 3.11, 3.12
+- [Visual Studio](https://visualstudio.microsoft.com/vs/community/) 2022 Community 17.11
+- [CPython](https://www.python.org/downloads/windows/) 3.9, 3.10, 3.11, 3.12, 3.13
 - [PyPy](https://www.pypy.org/download.html) 3.10
 
 ## Alternatives
